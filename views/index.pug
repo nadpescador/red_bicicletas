@@ -3,36 +3,40 @@ extends layout
 block content
   nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top
     .container
-      a.navbar-brand.js-scroll-trigger(href='#page-top') Start Bootstrap
+      a.navbar-brand.js-scroll-trigger(href='#') Red Bicicletas
       button.navbar-toggler.navbar-toggler-right(type='button' data-toggle='collapse' data-target='#navbarResponsive' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation')
         | Menu
         i.fas.fa-bars
       #navbarResponsive.collapse.navbar-collapse
         ul.navbar-nav.ml-auto
           li.nav-item
-            a.nav-link.js-scroll-trigger(href='#about') Nosotros
-          li.nav-item
-            a.nav-link.js-scroll-trigger(href='/bicicletas') Bicicletas
+            a.nav-link.js-scroll-trigger(href='#main_map') Mapa
           li.nav-item
             a.nav-link.js-scroll-trigger(href='#signup') Contacto
+          li.nav-item
+            a.nav-link.js-scroll-trigger(href='/bicicletas') Lista de bicicletas
+            
   // Masthead
   header.masthead
     .container.d-flex.h-100.align-items-center
       .mx-auto.text-center
         h1.mx-auto.my-0.text-uppercase Red Bicicletas
         h2.text-white-50.mx-auto.mt-2.mb-5 La primera comunidad online de ciclistas urbanos.
-        a.btn.btn-primary.js-scroll-trigger(href='#about') COMENZAR
+        a.btn.btn-primary.js-scroll-trigger(href='#main_map') COMENZAR
+
   // About
-  section#about.about-section.text-center
-    .container
-      .row
-        .col-lg-8.mx-auto
-          h2.text-white.mb-4 Built with Bootstrap 4
-          p.text-white-50
-            | Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on
-            a(href='https://startbootstrap.com/template-overviews/grayscale/') the preview page
-            |                             . The theme is open source, and you can use it for any purpose, personal or commercial.
-      img.img-fluid(src='/img/ipad.png' alt='')     
+  //section#about.about-section.text-center
+  //  .container
+  //    .row
+  //      .col-lg-8.mx-auto
+  //        h2.text-white.mb-4 Built with Bootstrap 4
+  //        p.text-white-50
+  //          | Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on
+  //          a(href='https://startbootstrap.com/template-overviews/grayscale/') the preview page
+  //          |                             . The theme is open source, and you can use it for any purpose, personal or commercial.
+  //    img.img-fluid(src='/img/ipad.png' alt='')     
+
+  
   // Projects
   section#projects.projects-section.bg-light
     .container
